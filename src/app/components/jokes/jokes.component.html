@@ -1,0 +1,7 @@
+<div class="jokes-container">
+  <app-joke-form (addJokeEvent)="addJoke($event)"></app-joke-form>
+  <app-joke-list
+    [jokes]="jokes"
+    (deleteJokeEvent)="deleteJoke($event)"
+  ></app-joke-list>
+</div>

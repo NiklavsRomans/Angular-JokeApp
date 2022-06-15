@@ -1,0 +1,44 @@
+<form [formGroup]="jokeForm">
+  <div class="form-wrapper">
+    <label class="form__Label">
+      Question
+      <input
+        placeholder="Enter the question..."
+        formControlName="joke"
+        type="text"
+      />
+      <small
+        class="error__msg"
+        *ngIf="
+          jokeForm.get('joke')?.touched &&
+          jokeForm.get('joke')?.hasError('required')
+        "
+        >This field is required!</small
+      >
+    </label>
+    <label class="form__Label">
+      Answer
+      <input
+        placeholder="Enter the punchline..."
+        formControlName="answer"
+        type="text"
+      />
+      <small
+        class="error__msg"
+        *ngIf="
+          jokeForm.get('answer')?.touched &&
+          jokeForm.get('answer')?.hasError('required')
+        "
+        >This field is required!</small
+      >
+    </label>
+    <button
+      [disabled]="jokeForm.invalid"
+      class="submit__btn"
+      (click)="addJoke()"
+      type="button"
+    >
+      Create
+    </button>
+  </div>
+</form>

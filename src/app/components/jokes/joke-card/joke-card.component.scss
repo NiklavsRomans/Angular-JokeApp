@@ -1,0 +1,43 @@
+.joke__card--wrapper {
+    margin-top: 15px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.joke__card--buttons {
+    padding-top: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+.answer-btn {
+    color: black;
+    background-color: #f6d206;
+    border: 1px solid #f6d206;;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 3px 15px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(228, 168, 18);
+    }
+}
+
+.delete-btn {
+    color: white;
+    background-color: #cf0039;
+    border: 1px solid #cf0039;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 3px 15px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(146, 20, 20);
+    }
+}
+
+.joke {
+    padding-bottom: 5px;
+    font-size: 26px;
+}
