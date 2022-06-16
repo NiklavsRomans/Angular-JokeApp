@@ -1,9 +1,9 @@
-<div class="joke__card--wrapper">
+<div class="joke__card-wrapper">
   <div>
     <p class="joke">{{ joke?.joke }}</p>
     <p class="joke__answer" *ngIf="showAnswer">{{ joke?.answer }}</p>
   </div>
-  <div class="joke__card--buttons">
+  <div class="joke__card-buttons">
     <button class="answer-btn" (click)="handleShowAnswer()">Tell me</button>
     <button class="delete-btn" (click)="deleteJoke()">Delete</button>
   </div>
