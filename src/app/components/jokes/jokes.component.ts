@@ -16,8 +16,4 @@ export class JokesComponent {
   deleteJoke(index: number): void {
     this.jokes.splice(index, 1);
   }
-
-  // constructor() { }
-  // ngOnInit(): void {
-  // }
 }
